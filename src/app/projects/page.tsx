@@ -12,6 +12,9 @@ export default function ProjectsPage() {
       <p className="muted">
         Everything below is code I wrote myself, warts and all.
       </p>
+      {projects.length === 0 && (
+        <p>Nothing here yet — I&apos;m still learning. Check back soon.</p>
+      )}
       <div className="project-list">
         {projects.map((project) => (
           <div className="project-card" key={project.slug}>
