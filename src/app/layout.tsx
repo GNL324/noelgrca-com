@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SocialLinks } from "./social-links";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,7 +24,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </header>
         <main className="site-main container">{children}</main>
         <footer className="site-footer container">
-          © {new Date().getFullYear()} Noel Garcia
+          <span>© {new Date().getFullYear()} Noel Garcia</span>
+          <SocialLinks />
         </footer>
       </body>
     </html>

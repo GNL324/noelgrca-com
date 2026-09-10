@@ -106,11 +106,30 @@ a.underline-link:hover {
 }
 
 .site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 2.5rem;
   border-top: 1px solid var(--border);
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+.social-links {
+  display: flex;
+  gap: 0.9rem;
+  color: var(--muted);
+}
+
+.social-links a {
+  display: flex;
+  color: var(--muted);
+}
+
+.social-links a:hover {
+  color: var(--foreground);
 }
 
 h1 {
